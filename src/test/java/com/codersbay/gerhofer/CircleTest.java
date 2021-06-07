@@ -1,5 +1,6 @@
 package com.codersbay.gerhofer;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -8,7 +9,7 @@ public class CircleTest {
 
     @Test
     public void testCircle(){
-        Shapes s1 = new Circle(5.5, "RED", false);
+        Shape s1 = new Circle(5.5, "RED", false);
         System.out.println(s1);
         System.out.println(s1.getArea());
         System.out.println(s1.getPerimeter());
@@ -17,12 +18,7 @@ public class CircleTest {
 
 
         Circle c1 = (Circle)s1;
-        System.out.println(c1);
-        System.out.println(c1.getArea());
-        System.out.println(c1.getPerimeter());
-        System.out.println(c1.getColor());
-        System.out.println(c1.isFilled());
-        System.out.println(c1.getRadius());
+        Assertions.assertEquals( c1.getArea(), c1.getRadius()* c1.getRadius()*Math.PI);
     }
     @Test
     public void illegalArgumentTest() {

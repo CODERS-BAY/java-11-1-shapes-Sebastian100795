@@ -1,6 +1,6 @@
 package com.codersbay.gerhofer;
 
-public class Circle extends Shapes {
+public class Circle extends Shape {
 
 
     private double radius;

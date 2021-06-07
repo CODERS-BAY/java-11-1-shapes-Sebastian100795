@@ -1,6 +1,6 @@
 package com.codersbay.gerhofer;
 
-public class Rectangle extends Shapes {
+public class Rectangle extends Shape {
 
     private double width;
     private double length;
@@ -58,7 +58,7 @@ public class Rectangle extends Shapes {
     }
 
     public double getPerimeter() {
-        return 2 * (width * length);
+        return 2 * (width + length);
     }
 
 

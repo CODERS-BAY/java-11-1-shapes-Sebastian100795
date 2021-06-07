@@ -1,17 +1,17 @@
 package com.codersbay.gerhofer;
 
-public abstract class Shapes {
+public abstract class Shape {
 
     private String color;
     private boolean filled;
 
-    public Shapes(String color, boolean filled){
+    public Shape(String color, boolean filled){
 
         this.color = color;
         this.filled = filled;
     }
 
-    public Shapes() {
+    public Shape() {
 
     }
 
